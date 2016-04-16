@@ -1,6 +1,9 @@
 CREATE TABLE `Messages` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `message` longblob NOT NULL,
+  `deviceId` mediumtext NOT NULL,
+  `deviceStatus` mediumtext NOT NULL,
+  `deviceCondition` int NOT NULL,
+  `errorCode` int NOT NULL,
   `topic` mediumtext NOT NULL,
   `qos` tinyint(11) unsigned NOT NULL,
   `client` text NOT NULL,
